@@ -4,7 +4,9 @@
     {
         public string Convert(int number)
         {
-            return "twenty";
+            var tensMap = new[] { "twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety" };
+
+            return tensMap[number/10 - 2];
         }
     }
 }
