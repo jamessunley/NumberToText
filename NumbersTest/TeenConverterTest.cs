@@ -13,7 +13,7 @@ namespace NumbersTest
             //Given I have the int 11
             int number = 11;
             //When I pass the value in to the number sting converter
-            ITeenConverter teenConverter = new TeenConverter();
+            ITeensConverter teenConverter = new TeenConverter();
             string text = teenConverter.Convert(number);
             //Then I get back eleven
             Assert.AreEqual("eleven", text);
@@ -25,7 +25,7 @@ namespace NumbersTest
             //Given I have the int 12
             int number = 12;
             //When I pass the value in to the number sting converter
-            ITeenConverter teenConverter = new TeenConverter();
+            ITeensConverter teenConverter = new TeenConverter();
             string text = teenConverter.Convert(number);
             //Then I get back twelve
             Assert.AreEqual("twelve", text);
@@ -37,7 +37,7 @@ namespace NumbersTest
             //Given I have the int 13
             int number = 13;
             //When I pass the value in to the number sting converter
-            ITeenConverter teenConverter = new TeenConverter();
+            ITeensConverter teenConverter = new TeenConverter();
             string text = teenConverter.Convert(number);
             //Then I get back thirteen
             Assert.AreEqual("thirteen", text);
@@ -49,7 +49,7 @@ namespace NumbersTest
             //Given I have the int 15
             int number = 15;
             //When I pass the value in to the number sting converter
-            ITeenConverter teenConverter = new TeenConverter();
+            ITeensConverter teenConverter = new TeenConverter();
             string text = teenConverter.Convert(number);
             //Then I get back fifteen
             Assert.AreEqual("fifteen", text);
@@ -61,7 +61,7 @@ namespace NumbersTest
             //Given I have the int 19
             int number = 19;
             //When I pass the value in to the number sting converter
-            ITeenConverter teenConverter = new TeenConverter();
+            ITeensConverter teenConverter = new TeenConverter();
             string text = teenConverter.Convert(number);
             //Then I get back nineteen
             Assert.AreEqual("nineteen", text);

@@ -1,6 +1,6 @@
 ﻿namespace NumbersToString
 {
-    public interface ITeenConverter
+    public interface IConverterFlow
     {
         string Convert(int number);
     }

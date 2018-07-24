@@ -1,6 +1,6 @@
 ﻿namespace NumbersToString
 {
-    public class TeenConverter : ITeenConverter
+    public class TeenConverter : ITeensConverter
     {
         public string Convert(int number)
         {
