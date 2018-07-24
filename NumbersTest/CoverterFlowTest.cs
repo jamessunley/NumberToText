@@ -19,8 +19,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called once
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
@@ -28,6 +30,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -41,8 +45,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called once
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
@@ -50,6 +56,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -63,8 +71,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called once
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
@@ -72,6 +82,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -85,8 +97,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called never
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
@@ -94,6 +108,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -107,8 +123,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called never
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
@@ -116,6 +134,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -129,8 +149,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called never
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
@@ -138,6 +160,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -151,8 +175,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called never
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
@@ -160,6 +186,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -173,8 +201,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called never
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
@@ -182,6 +212,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -195,8 +227,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called never
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
@@ -204,6 +238,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -217,8 +253,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called never
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
@@ -226,6 +264,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -239,8 +279,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called never
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
@@ -248,6 +290,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -261,8 +305,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called never
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
@@ -270,6 +316,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -283,8 +331,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called never
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
@@ -292,6 +342,8 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
 
         [TestMethod]
@@ -305,8 +357,10 @@ namespace NumbersTest
             Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
             //And I have a tensconverter object
             Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
             //When I call converterFlow.calculate
-            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object);
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
             converterFlow.Convert(number);
             //Then I will verify that unitconverter is called never
             mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
@@ -314,6 +368,35 @@ namespace NumbersTest
             teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
             //And I will verify that tensConverter is not called
             tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
+            //And I will verify that onehundredConverter is not called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
         }
+
+        [TestMethod]
+        public void Given_input_is_100_onehundredconverter_is_called_once()
+        {
+            //Given I have the input 100
+            int number = 100;
+            //And I have a unitconverter object
+            Mock<IUnitConverter> mock = new Mock<IUnitConverter>();
+            //And I have a teensconverter object
+            Mock<ITeensConverter> teenmock = new Mock<ITeensConverter>();
+            //And I have a tensconverter object
+            Mock<ITensConverter> tenmock = new Mock<ITensConverter>();
+            //And I have a onehundredconverter object
+            Mock<IOneHundredConverter> onehundredmock = new Mock<IOneHundredConverter>();
+            //When I call converterFlow.calculate
+            IConverterFlow converterFlow = new ConverterFlow(mock.Object, teenmock.Object, tenmock.Object, onehundredmock.Object);
+            converterFlow.Convert(number);
+            //Then I will verify that unitconverter is called never
+            mock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
+            //And I will verify that teensConverter is not once
+            teenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
+            //And I will verify that tensConverter is not called
+            tenmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Never);
+            //And I will verify that onehundredConverter is called
+            onehundredmock.Verify(m => m.Convert(It.IsAny<int>()), Times.Once);
+        }
+
     }
 }
